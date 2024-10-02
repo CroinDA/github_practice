@@ -1,6 +1,6 @@
-from typing import Union
+from typing import Union, Optional
 
-def add(x: Union[int, float], y: Union [int, float]) -> Union[int, float]:  # x, y는 정수나 실수로 입력, 출력도 정수나 실수로 출력 
+def add(x: Union[int, float], y: Union [int, float]) -> Optional[Union[int, float]]:  # x, y는 정수나 실수로 입력, 출력도 정수나 실수로 출력 
     try:
         result = x+y
     except Exception as e:
